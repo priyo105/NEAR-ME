@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Near Me </string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="APIKEY">AIzaSyCqEEDdypCvLeSVWqN2JGlQ2pMvCCQKG24</string>
+
+
+<!--    test-->
+<!--    <string name="interstatial_addId">ca-app-pub-3940256099942544/1033173712</string>-->
+<!--    <string name="banner_add">ca-app-pub-3940256099942544/6300978111</string>-->
+<!--    <string name="rewarded_add">ca-app-pub-3940256099942544/5224354917</string>-->
+
+
+
+        <string name="interstatial_addId">ca-app-pub-6287107563152826/4898388090</string>
+        <string name="banner_add">ca-app-pub-6287107563152826/7907694818</string>
+        <string name="rewarded_add">ca-app-pub-6287107563152826/5449052438</string>
+
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/tools"
+    app:ignore="NamespaceTypo">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <!-- A CardView that contains a TextView -->
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/resturantcard"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_margin="20dp"
+            android:elevation="100dp"
+            app:cardBackgroundColor="#FFF"
+            card_view:cardCornerRadius="10dp">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:text="Resturants"
+                    android:textColor="#301010"
+                    android:textAlignment="center"
+                    android:forceHasOverlappingRendering="false"
+                    android:textSize="14dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="30dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal" />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

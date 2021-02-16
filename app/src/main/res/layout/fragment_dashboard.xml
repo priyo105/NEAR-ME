@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="100dp"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_add">
+        </com.google.android.gms.ads.AdView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="60dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="40dp"
+                android:background="@drawable/loc_icon"
+                android:layout_height="40dp"></ImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your Location"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#7d4900"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"></TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textSize="15dp"
+                    android:id="@+id/text_home"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#400a00"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!-- A CardView that contains a TextView -->
+            <androidx.cardview.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/pharmacycard"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="20dp"
+                android:elevation="100dp"
+                app:cardBackgroundColor="#FFF"
+                card_view:cardCornerRadius="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/medicine"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="15dp"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#301010"/>
+
+
+                <TextView
+                    android:id="@+id/info_text"
+                    android:layout_width="match_parent"
+                    android:text="pharmacy"
+                    android:textColor="#301010"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="30dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/supermarket"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="20dp"
+                android:elevation="100dp"
+                app:cardBackgroundColor="#FFF"
+                card_view:cardCornerRadius="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/market"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="15dp"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#301010"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Super Market"
+                    android:textColor="#301010"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="30dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/laundry"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="20dp"
+                android:elevation="100dp"
+                app:cardBackgroundColor="#FFF"
+                card_view:cardCornerRadius="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/laundry"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="15dp"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#301010"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Laundry"
+                    android:textColor="#301010"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="30dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/electronic"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="20dp"
+                android:elevation="100dp"
+                app:cardBackgroundColor="#FFF"
+                card_view:cardCornerRadius="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/book"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="15dp"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#301010"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Book Store"
+                    android:textColor="#301010"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="30dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/bakery"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="20dp"
+                android:elevation="100dp"
+                app:cardBackgroundColor="#FFF"
+                card_view:cardCornerRadius="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/bread"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="15dp"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#301010"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Bakery"
+                    android:textColor="#301010"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="30dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
