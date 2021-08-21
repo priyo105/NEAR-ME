@@ -24,7 +24,7 @@ public class InterStitialAdController {
 
     public void ShowAdds(){
         final Handler handler = new Handler();
-        final int delay = 12000; // 1000 milliseconds == 1 second
+        final int delay = 45000; // 1000 milliseconds == 1 second
 
         handler.postDelayed(new Runnable() {
             public void run() {

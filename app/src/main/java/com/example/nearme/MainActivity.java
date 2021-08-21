@@ -14,7 +14,7 @@ import androidx.navigation.ui.NavigationUI;
 
 public class MainActivity extends AppCompatActivity {
     private InterStitialAdController interStitialAdController;
-    private RewardedAddController rewardedAddController;
+//    private RewardedAddController rewardedAddController;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,10 +30,10 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
 
-
-        interStitialAdController=new InterStitialAdController(this);
-        interStitialAdController.initializeAdds();
-        interStitialAdController.ShowAdds();
+//
+//        interStitialAdController=new InterStitialAdController(this);
+//        interStitialAdController.initializeAdds();
+//        interStitialAdController.ShowAdds();
 
     }
 
@@ -41,9 +41,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        interStitialAdController.ShowAdds();
-        rewardedAddController=new RewardedAddController(this);
-        rewardedAddController.showAdd();
+//        interStitialAdController.ShowAdds();
+////        rewardedAddController=new RewardedAddController(this);
+//        rewardedAddController.showAdd();
 
     }
 }

@@ -21,7 +21,7 @@
         <activity android:name=".MainActivity" />
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-6287107563152826~4160021493"/>
+            android:value="ca-app-pub-6287107563152826~8977792384"/>
 
         <activity
             android:name=".SplashScreen"
